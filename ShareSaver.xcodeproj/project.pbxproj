@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B7EE90135D356F514D152F6 /* ShareSaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE220BCFA1E0917E8B763FB /* ShareSaverApp.swift */; };
+		176A7532CCC388BBB952D1B2 /* SharedPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE19DB9C8B4B89AB0D19E1 /* SharedPersistence.swift */; };
+		7A574C944295C219A79166DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679FAA6885515275871D2F1A /* ContentView.swift */; };
+		9C0AD57A978507C919926025 /* ShareSaver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A23543F50314F7FDCFE88DC /* ShareSaver.xcdatamodeld */; };
+		B0B44D3D8D2B140BB8B75033 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE35F847EA8576F872B258D /* ShareViewController.swift */; };
+		B4E9C95A607DB02CAE540EE2 /* ShareSaver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A23543F50314F7FDCFE88DC /* ShareSaver.xcdatamodeld */; };
+		DA4C28E50A071E67C02C8FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BC7A8F6C3E8C1B8B753D59 /* Assets.xcassets */; };
+		FB4EABFB1DB25BBFE24A1F7D /* SharedPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE19DB9C8B4B89AB0D19E1 /* SharedPersistence.swift */; };
+		FF958BD4448EB124A87D42CF /* SaveExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0E184B263B7C6D99BB5FA141 /* SaveExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FA9BA5F9D5DC1AFB51072D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A0C6BDF699E11BB93960FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3799788A9F030FBD01A69765;
+			remoteInfo = SaveExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F94A36843FDE75BA0C055214 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF958BD4448EB124A87D42CF /* SaveExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E184B263B7C6D99BB5FA141 /* SaveExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SaveExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EE19DB9C8B4B89AB0D19E1 /* SharedPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPersistence.swift; sourceTree = "<group>"; };
+		1990AFEA9E6E0E69035D7EC7 /* ShareSaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareSaver.entitlements; sourceTree = "<group>"; };
+		224F5DA1AD7AC055FE919487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3FC6152BACAE53C80B524CBB /* ShareSaver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShareSaver.xcdatamodel; sourceTree = "<group>"; };
+		679FAA6885515275871D2F1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9DE35F847EA8576F872B258D /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		BDE239F458898EA7D514135A /* ShareSaver.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ShareSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27AC4D2A60D0934052F6BD3 /* SaveExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveExtension.entitlements; sourceTree = "<group>"; };
+		DFE220BCFA1E0917E8B763FB /* ShareSaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSaverApp.swift; sourceTree = "<group>"; };
+		E3BC7A8F6C3E8C1B8B753D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		32321F6216B6FE7F8618276A /* SaveExtension */ = {
+			isa = PBXGroup;
+			children = (
+				224F5DA1AD7AC055FE919487 /* Info.plist */,
+				D27AC4D2A60D0934052F6BD3 /* SaveExtension.entitlements */,
+				9DE35F847EA8576F872B258D /* ShareViewController.swift */,
+			);
+			path = SaveExtension;
+			sourceTree = "<group>";
+		};
+		3B1C6B8AFCB1A837CBAC1134 = {
+			isa = PBXGroup;
+			children = (
+				32321F6216B6FE7F8618276A /* SaveExtension */,
+				C87DEB951BAD8DF9027C8963 /* Shared */,
+				AF63B12BF7F3B82007CBCBF9 /* ShareSaver */,
+				BDF41A1128D13745C7D13345 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF63B12BF7F3B82007CBCBF9 /* ShareSaver */ = {
+			isa = PBXGroup;
+			children = (
+				E3BC7A8F6C3E8C1B8B753D59 /* Assets.xcassets */,
+				679FAA6885515275871D2F1A /* ContentView.swift */,
+				1990AFEA9E6E0E69035D7EC7 /* ShareSaver.entitlements */,
+				1A23543F50314F7FDCFE88DC /* ShareSaver.xcdatamodeld */,
+				DFE220BCFA1E0917E8B763FB /* ShareSaverApp.swift */,
+			);
+			path = ShareSaver;
+			sourceTree = "<group>";
+		};
+		BDF41A1128D13745C7D13345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E184B263B7C6D99BB5FA141 /* SaveExtension.appex */,
+				BDE239F458898EA7D514135A /* ShareSaver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C87DEB951BAD8DF9027C8963 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				18EE19DB9C8B4B89AB0D19E1 /* SharedPersistence.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3799788A9F030FBD01A69765 /* SaveExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1966C89C7496402C8DB6C032 /* Build configuration list for PBXNativeTarget "SaveExtension" */;
+			buildPhases = (
+				F1FB4025BC1816E5EAF371EC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaveExtension;
+			packageProductDependencies = (
+			);
+			productName = SaveExtension;
+			productReference = 0E184B263B7C6D99BB5FA141 /* SaveExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3C5BDF2C29FAEBD15FFA8ABB /* ShareSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1094ABB446FED3B12C91FD /* Build configuration list for PBXNativeTarget "ShareSaver" */;
+			buildPhases = (
+				24A9136875A59AB9C8424086 /* Sources */,
+				C44A1DB43DD04CD12ADC06C7 /* Resources */,
+				F94A36843FDE75BA0C055214 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F77354BD09CC1803ED572B6E /* PBXTargetDependency */,
+			);
+			name = ShareSaver;
+			packageProductDependencies = (
+			);
+			productName = ShareSaver;
+			productReference = BDE239F458898EA7D514135A /* ShareSaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A0C6BDF699E11BB93960FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3799788A9F030FBD01A69765 = {
+						ProvisioningStyle = Automatic;
+					};
+					3C5BDF2C29FAEBD15FFA8ABB = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9A48F3271FBF76B000565C3D /* Build configuration list for PBXProject "ShareSaver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3B1C6B8AFCB1A837CBAC1134;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3799788A9F030FBD01A69765 /* SaveExtension */,
+				3C5BDF2C29FAEBD15FFA8ABB /* ShareSaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C44A1DB43DD04CD12ADC06C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4C28E50A071E67C02C8FF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24A9136875A59AB9C8424086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A574C944295C219A79166DE /* ContentView.swift in Sources */,
+				9C0AD57A978507C919926025 /* ShareSaver.xcdatamodeld in Sources */,
+				0B7EE90135D356F514D152F6 /* ShareSaverApp.swift in Sources */,
+				176A7532CCC388BBB952D1B2 /* SharedPersistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FB4025BC1816E5EAF371EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E9C95A607DB02CAE540EE2 /* ShareSaver.xcdatamodeld in Sources */,
+				B0B44D3D8D2B140BB8B75033 /* ShareViewController.swift in Sources */,
+				FB4EABFB1DB25BBFE24A1F7D /* SharedPersistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F77354BD09CC1803ED572B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3799788A9F030FBD01A69765 /* SaveExtension */;
+			targetProxy = 0FA9BA5F9D5DC1AFB51072D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05D41F58B8BED46240A65A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SaveExtension/SaveExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareSaver.SaveExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56948116BB1D28853DDF6CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareSaver/ShareSaver.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareSaver;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57B8F5D085ABD68E00937E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareSaver/ShareSaver.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareSaver;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FABA373B3067DC7B65A2754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9DDF052E2702577F0E75A0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SaveExtension/SaveExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareSaver.SaveExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6B692E149BB48DAF54C4289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1966C89C7496402C8DB6C032 /* Build configuration list for PBXNativeTarget "SaveExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDF052E2702577F0E75A0CF /* Debug */,
+				05D41F58B8BED46240A65A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E1094ABB446FED3B12C91FD /* Build configuration list for PBXNativeTarget "ShareSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56948116BB1D28853DDF6CE0 /* Debug */,
+				57B8F5D085ABD68E00937E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A48F3271FBF76B000565C3D /* Build configuration list for PBXProject "ShareSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FABA373B3067DC7B65A2754 /* Debug */,
+				C6B692E149BB48DAF54C4289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A23543F50314F7FDCFE88DC /* ShareSaver.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FC6152BACAE53C80B524CBB /* ShareSaver.xcdatamodel */,
+			);
+			currentVersion = 3FC6152BACAE53C80B524CBB /* ShareSaver.xcdatamodel */;
+			path = ShareSaver.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1A0C6BDF699E11BB93960FC /* Project object */;
+}
